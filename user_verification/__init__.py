@@ -145,7 +145,7 @@ def main(req: HttpRequest) -> HttpResponse:
             return HttpResponse(json.dumps({"patient_id": patient_id, "center_id": id_d}))
         return HttpResponse("Data not found", status_code=404)
     else:
-        return HttpResponse(
+        return HttpResponse( 
             "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.",
             status_code=200
         )
